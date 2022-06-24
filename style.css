@@ -1,0 +1,136 @@
+/*FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Montserrat:wght@400;500;600&display=swap');
+
+/*RESET*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Montserrat' , sans-serif ;
+
+}
+
+/*SHARE (CODIGO QUE VOY COMPARTIENDO*/
+.bg-gradient{
+    background: rgb(5,11,36);
+    background: linear-gradient(0deg, rgba(5,11,36,1) 0%, rgba(21,41,136,1) 100%);
+
+}
+
+section{
+    position: relative;
+    overflow: hidden/* para que no se muestre nada de lo que sobresalga*/;
+}
+.grid{/*servira de container*/
+    width: 90%;
+    margin: 0 auto;/* centra siempre el contenido*/
+    max-width:900px ; /*pensando en dispositivoa mas grandes*/
+}
+
+.wrapper{
+    position: relative;
+
+}
+.img-container{
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    min-height: 280px;/*para dispositivos pequeños*/
+    background-position: center center;
+
+}
+
+.btn-basic{/*boton*/
+    margin:10px 0px ;
+    background: #fff;
+    border-radius: 50px;
+    border: none;
+    color: blue;
+    padding: 20px 70px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: .5s all ease;
+
+
+}
+
+.btn-basic:hover{/*efecto que hace cuando se pase el mouse por encima*/
+    background: #fff;
+}
+
+/*? HEADER*/
+
+.img_logo{
+    width: 60px;
+}
+/*? SECTION FIRST*/
+
+.section-first{
+    padding-top: 40px;
+
+}
+.curtain{/*efecto transversal de la siguiente forma:*/
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 85%;
+    z-index:0;
+    
+    transform-origin: top left;
+}
+.wrapper{/*solo para la primer seccion*/
+    display:flex;
+     flex-direction: row; 
+    align-items: center;
+
+}
+
+.text-container{
+    color:#fff;
+}
+.sub-heading{
+    margin: 10px 0px;
+}
+.img-container-one{
+    background-image:url(./img/sede-Pineyro.jpg) ;
+}
+
+/*SECTION SECOND*/
+
+.section-second{
+    margin: 50px 0px;
+}
+
+.box{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 11px rgba(5,11,36,1);
+    border-radius: 25px;
+}
+.boletin-container{
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+
+}
+
+.box-text{
+    margin-top: 30px;
+    text-align: justify;
+    color: #484848;
+    font-size: 13px;
+}
+
+/*MEDIA QUERIES*/
+@media (min-width: 768x){
+    .wrapper-first{
+        flex-direction: columne;
+        justify-content: space-between;
+    }
+}
